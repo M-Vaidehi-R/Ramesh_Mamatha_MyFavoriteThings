@@ -1,4 +1,4 @@
-#Assignment Description
+# Assignment Description
 Pick 3 things you love and create an app that showcases those things. Create a JSON object
 that contains at least 4 properties (name, description, etc) - you must include an image of some
 kind.
@@ -9,7 +9,7 @@ something better. The three “things” should be represented by an interactive
 The controls must use the JSON object as their data source - use the Fetch API to retrieve the
 object on page load and immediately update the view.
 
-#Assignment Requirements
+# Assignment Requirements
 Design a mobile-first one page web application that highlights your favourite things. Use
 images, video, 3D - anything at all. You must use a JSON object with at least 4 properties - you
 MUST have title / heading (text), image(s) and descriptive text.
