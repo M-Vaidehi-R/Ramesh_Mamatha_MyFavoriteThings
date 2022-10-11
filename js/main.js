@@ -1,47 +1,53 @@
 // imports go at the top of of the JS file
 
-import {getData} from "./modules/dataMiner.js";  
+//import {getData} from "./modules/dataMiner.js";  
 
 //this is an IIFE (immeadiately invoked function expression)
 //this is great for encapsulating code / making it private
 // and is also a Javascript programming pattern (the module pattern)
 
 (() => {
+
+    let buttons = document.querySelectorAll(".nav-buttons"),
+    //theTemplate = document.querySelector("#activity-template").content,
+    theTeam = document.querySelector("#fav-section"),
+    TheFavTitle = document.querySelector(".fav-title"),
+    TheFavDesc = document.querySelector(".fav-desc"),
+    TheFavImg= document.querySelector(".fav-img"),
+    FavCont = document.querySelector(".Fav-cont");
+
     console.log("fired");
 
-      // get a reference to the template's contents and the target container
-      //into which we will clone a copy of the markup
+    let favorite_data = {};
 
-      let theTemplate = document.querySelector("#activity-template").content,
-          theTeam = document.querySelector("#fav-section");
 
-          //judt to test if it imported correctly
-          //getData();
-
-    function buildTeam(data) {
-        //get all the keys from
-        debugger;
-        const theFavs = Object.keys(data);
-
-        //this JS creates keys like [trevor, justin etc]
-
-        theFavs.forEach(fav => {
-
-            //debugger;
-            let panel = theTemplate.cloneNode(true),
-                containers= panel.firstElementChild.children;  // the section tags contents
-
-                containers[0].querySelector("img").src = `images/${data[fav].Picture}`;
-                
-                containers[1].textContent = data[fav].name;
-                containers[2].textContent = data[fav].Desc;
-                containers[3].textContent = data[fav].nickname;
-
-                theTeam.appendChild(panel);
+    function getData()  {                                 //callback is a function/ a placeholder for function/ which runs when the code is succesful
+        console.log(`it's alliive :)`);
+    
+        fetch(`./data.json`) 
+        .then(res => res.json()) 
+        .then(data => {
+            favorite_data = data;
+            console.table(favorite_data);
         })
+        .catch(error => console.log(error));
+    }
+
+       getData();
+    function buildTeam() {
+        FavCont.style.display ="block";
+
+        let key = this.dataset.key;
+        console.log(this.dataset.key);
+
+        FavCont.style.display ="block";
+
+        TheFavImg.querySelector("img").src = `images/${favorite_data[key].Image}`;
+       TheFavTitle.textContent = favorite_data[key].name;
+       TheFavDesc.textContent = favorite_data[key].Desc;
        
 
     }   
 
-    getData(buildTeam);
+    buttons.forEach(button => button.addEventListener("click", buildTeam));
 })();

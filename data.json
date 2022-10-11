@@ -2,30 +2,30 @@
     "Sunset": {
         "name" : "Sunset",
         "Desc" : "Write a description",
-        "Picture" : "sunset.jpg"
+        "Image" : "sunset.jpg"
     },
 
     "Music": {
         "name" : "Music",
         "Desc" : "Write a description",
-        "Picture" : "music.jpg"
+        "Image" : "music.jpg"
     },
 
     "Plushies": {
         "name" : "Plushies",
         "Desc" : "Write a description",
-        "Picture" : "panda.jpg"
+        "Image" : "panda.jpg"
     },
 
     "Bubble-Tea": {
         "name" : "Bubble Tea",
         "Desc" : "Write a description",
-        "Picture" : "bubble_tea.jpg"
+        "Image" : "bubble_tea.jpg"
     },
 
     "Coding": {
-        "name" : "Coding",
+        "name" : "Programming",
         "Desc" : "Write a description",
-        "Picture" : "coding.jpg"
+        "Image" : "coding.jpg"
     }
 }
