@@ -21,7 +21,7 @@
     let favorite_data = {};
 
 
-    function getData()  {                                 //callback is a function/ a placeholder for function/ which runs when the code is succesful
+    function getData()  {                                 
         console.log(`it's alliive :)`);
     
         fetch(`./data.json`) 
@@ -43,8 +43,8 @@
         FavCont.style.display ="block";
 
         TheFavImg.querySelector("img").src = `images/${favorite_data[key].Image}`;
-       TheFavTitle.textContent = favorite_data[key].name;
-       TheFavDesc.textContent = favorite_data[key].Desc;
+        TheFavTitle.textContent = favorite_data[key].name;
+        TheFavDesc.textContent = favorite_data[key].Desc;
        
 
     }   
