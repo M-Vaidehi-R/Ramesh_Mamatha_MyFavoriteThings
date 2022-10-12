@@ -12,8 +12,8 @@ function getData(callback)  {                                 //callback is a fu
     .then(data => {
         console.log(data);
 
-        //build out the team content on gthe page
-        //callback is a reference to ythe buildteam func in the ,main JS file
+        //build out the team content on the page
+        //callback is a reference to the buildteam func in the ,main JS file
         callback(data);
     })
     //  if anything breaks anywhere along the line, catch the error event
@@ -22,3 +22,7 @@ function getData(callback)  {                                 //callback is a fu
 }
 
 export {getData}
+
+
+// a callback function is a function passed into another function as a arguement, which 
+//is used to complete any action etc.

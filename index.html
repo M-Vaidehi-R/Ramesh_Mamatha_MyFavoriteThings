@@ -12,23 +12,37 @@
 
     <h1 hidden>My Favourite Activities</h1>
 
-    <section id="fav-section"></section>
+    <section id="items">
+        <h2 hidden class="buttons">buttons</h2>
 
-    <template id="activity-template">
+    <button  data-key="Sunset" class="nav-buttons">sunset</button>
+    <button  data-key="Music" class="nav-buttons">music</button>
+    <button  data-key="Plushies" class="nav-buttons">plushies</button>
+    <button  data-key="Bubble-Tea" class="nav-buttons">bubble tea</button>
+    <button  data-key="Coding" class="nav-buttons">Programming</button>
 
-        <section class="activity-panel">
+    </section>
+
+   <!-- <template id="activity-template">   
+         <section class="activity-panel">  section which contains images and info
             <div class="Picture">
-                <!-- src gets added dynamically -->
                 <img src="" alt="activity image">
             </div>
-            <!-- slug is just placeholder - this will get replaced -->
-            <h2 class="act_name">slug</h2>
-            <h3 class="act_desc">slug</h3>
-            <p class="act_fav">slug</p>  <!--fav egs-->
+            <h2 class="act_name"></h2>
+            <p class="act_desc"></p> 
         </section>
-        <!--add a button for more images-->
-    
-        </template>
+    </template>-->
+
+
+    <section id="fav-section">
+        <section class="Fav-cont">  <!--section which contains images and info-->
+            <div class="fav-img">
+                <img src="" alt="">
+            </div>
+            <h2 class="fav-title"></h2>
+            <p class="fav-desc"></p> 
+        </section>
+    </section>
     <script src="js/main.js" defer type="module"></script>
 </body>
 </html>

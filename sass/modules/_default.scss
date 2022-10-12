@@ -3,4 +3,9 @@ body {
     color:$main-colour;
 
     size: $main-size;
+
+    display: flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
