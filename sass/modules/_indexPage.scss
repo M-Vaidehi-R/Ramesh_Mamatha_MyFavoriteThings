@@ -1,0 +1,24 @@
+body{
+ 
+}
+
+.nav-sec button{
+    background-color: $main-colour;
+    color: $main-bg;
+    font-size: x-large;
+    width: 15em;
+    height: 3em;
+    margin-left: 32em;
+    margin-top: 2em;
+    border: 5px solid brown;
+}
+.nav-sec button:hover {
+    opacity: 75%;
+}
+
+.nav-sec p{
+    font-size: 1.5em;
+    margin-left: 24em;
+    margin-top: 15em;
+    color: rgb(110, 105, 105);
+}
