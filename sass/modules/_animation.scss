@@ -1,0 +1,17 @@
+button :active{
+        animation-name: "button-animation";
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+}
+    @keyframes button-animation {
+        0% {
+             margin-left:5em;
+          }
+        
+          50% {
+            margin-left: 10em;
+          }
+          100% {
+            margin-left: 0em;
+          }
+        }

@@ -1,31 +1,36 @@
 {
     "Sunset": {
         "name" : "Sunset",
-        "Desc" : "Write a description",
-        "Image" : "sunset.jpg"
+        "Desc" : "I am always in love with the sky. Sunset...every single day, I watch it as if I am watching it for the first time. My mood uplifter",
+        "Image" : "sunset.jpg",
+        "tagline" :"Somewhere between Heaven and Earth"
     },
 
     "Music": {
         "name" : "Music",
-        "Desc" : "Write a description",
-        "Image" : "music.jpg"
+        "Desc" : "My playlist knows me better than anyone. They play songs depending on my mood",
+        "Image" : "music.jpg",
+        "tagline" :"The language of emotions"
     },
 
     "Plushies": {
         "name" : "Plushies",
-        "Desc" : "Write a description",
-        "Image" : "panda.jpg"
+        "Desc" : "They have been my friends from childhood, I even have plushies of my same age..hehe.",
+        "Image" : "panda.jpg",
+        "tagline" :"My all time best friends"
     },
 
     "Bubble-Tea": {
         "name" : "Bubble Tea",
-        "Desc" : "Write a description",
-        "Image" : "bubble_tea.jpg"
+        "Desc" : "The best ever drink. This gives me happiness, no matter what. ",
+        "Image" : "bubble_tea.jpg",
+        "tagline" :"Did anyone say..."
     },
 
     "Coding": {
         "name" : "Programming",
-        "Desc" : "Write a description",
-        "Image" : "coding.jpg"
+        "Desc" : "Not gonna lie, programming was the subject I was the weakest at, never ever thought I would major in this field. This all happened because of my highschool teacher, she made me fell in love with coding, thus this subject. Now, here I am in the beginner's stage of my web developing career, with the best ever professors ;]    ",
+        "Image" : "coding.jpg",
+        "tagline" :"In love with.."
     }
 }

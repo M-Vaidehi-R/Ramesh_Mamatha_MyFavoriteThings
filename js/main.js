@@ -8,13 +8,12 @@
 
 (() => {
 
-    let buttons = document.querySelectorAll(".nav-buttons"),
-    //theTemplate = document.querySelector("#activity-template").content,
-    theTeam = document.querySelector("#fav-section"),
-    TheFavTitle = document.querySelector(".fav-title"),
+     let TheFavTitle = document.querySelector(".fav-title"),
     TheFavDesc = document.querySelector(".fav-desc"),
     TheFavImg= document.querySelector(".fav-img"),
-    FavCont = document.querySelector(".Fav-cont");
+    FavCont = document.querySelector(".Fav-cont"),
+    TheFavTag = document.querySelector(".fav-tagLine"),
+    buttons = document.querySelectorAll(".nav-buttons");
 
     console.log("fired");
 
@@ -39,15 +38,38 @@
 
         let key = this.dataset.key;
         console.log(this.dataset.key);
-
-        FavCont.style.display ="block";
-
+         
+        TheFavImg.style.display="block";
         TheFavImg.querySelector("img").src = `images/${favorite_data[key].Image}`;
+        TheFavTag.textContent = favorite_data[key].tagline;
         TheFavTitle.textContent = favorite_data[key].name;
         TheFavDesc.textContent = favorite_data[key].Desc;
-       
-
     }   
+   
+    function animateButtons() {
 
+       let targetEl = this;
+        gsap.to(targetEl, {
+            x: 15,
+            y: 0,
+            duration: 2,
+            ease: "bounce.out",
+        })
+
+    }
+
+   function animateContent(){
+    let content = document.querySelector(".Fav-cont");
+    console.log(content);
+    gsap.to(content, {
+        x: 0,
+        y: 20,
+        duration: 2,
+        ease: "ease-in",
+    })
+   } 
+
+    buttons.forEach(buton => buton.addEventListener("click", animateButtons));
+    buttons.forEach(buton => buton.addEventListener("click", animateContent));
     buttons.forEach(button => button.addEventListener("click", buildTeam));
 })();

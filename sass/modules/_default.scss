@@ -1,11 +1,28 @@
 body {
     background-color: $main-bg;
     color:$main-colour;
-
     size: $main-size;
-
-    display: flexbox;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin:1em;
 }
 
+p{
+    font-size: x-large;
+    margin-top: 4em;
+    margin-left: 10em;
+    color: black;
+    font-weight: bold;
+}
+img{
+    width: 7%;
+    height: 7%;
+    margin-left: 5em;
+}
+
+h1{
+    position: fixed;
+    margin-left: 7em;
+    font-size: 6em;
+    font-weight: bold;
+    color: $main-colour;
+    text-decoration:underline;
+}
