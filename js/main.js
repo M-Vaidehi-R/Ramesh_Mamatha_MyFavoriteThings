@@ -13,7 +13,9 @@
     TheFavImg= document.querySelector(".fav-img"),
     FavCont = document.querySelector(".Fav-cont"),
     TheFavTag = document.querySelector(".fav-tagLine"),
-    buttons = document.querySelectorAll(".nav-buttons");
+    buttons = document.querySelectorAll(".nav-buttons"),
+    closeButton = document.querySelector(".close"),
+    TheFoot = document.querySelector(".footer");
 
     console.log("fired");
 
@@ -35,6 +37,7 @@
        getData();
     function buildTeam() {
         FavCont.style.display ="block";
+        TheFoot.style.display = "block";
 
         let key = this.dataset.key;
         console.log(this.dataset.key);
@@ -60,7 +63,6 @@
 
    function animateContent(){
     let content = document.querySelector(".Fav-cont");
-    console.log(content);
     gsap.to(content, {
         x: 0,
         y: 20,
@@ -69,7 +71,12 @@
     })
    } 
 
+   function close(){
+    FavCont.style.display="none";
+   }
+
     buttons.forEach(buton => buton.addEventListener("click", animateButtons));
     buttons.forEach(buton => buton.addEventListener("click", animateContent));
     buttons.forEach(button => button.addEventListener("click", buildTeam));
+    closeButton.addEventListener("click", close);
 })();
