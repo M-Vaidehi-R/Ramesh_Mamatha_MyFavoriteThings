@@ -1,35 +1,35 @@
 {
     "Sunset": {
         "name" : "Sunset",
-        "Desc" : "I am always in love with the sky. Sunset...every single day, I watch it as if I am watching it for the first time. My mood uplifter",
+        "Desc" : "Sky and clouds com[pletes me. There is nothing mor beautiful than sunset.",
         "Image" : "sunset.jpg",
         "tagline" :"Somewhere between Heaven and Earth"
     },
 
     "Music": {
         "name" : "Music",
-        "Desc" : "My playlist knows me better than anyone. They play songs depending on my mood",
+        "Desc" : "Listening to songs helps me deal with all the things happening around me. And the old classicals...its literal gold",
         "Image" : "music.jpg",
         "tagline" :"The language of emotions"
     },
 
     "Plushies": {
         "name" : "Plushies",
-        "Desc" : "They have been my friends from childhood, I even have plushies of my same age..hehe.",
+        "Desc" : "I just love them so much. I even have ones of my same age.",
         "Image" : "panda.jpg",
         "tagline" :"My all time best friends"
     },
 
     "Bubble-Tea": {
         "name" : "Bubble Tea",
-        "Desc" : "The best ever drink. This gives me happiness, no matter what. ",
+        "Desc" : "I just love this thing. Whether its cold or hot outside, I am definitely having it. ",
         "Image" : "bubble_tea.jpg",
         "tagline" :"Did anyone say..."
     },
 
     "Coding": {
         "name" : "Programming",
-        "Desc" : "Not gonna lie, programming was the subject I was the weakest at, never ever thought I would major in this field. This all happened because of my highschool teacher, she made me fell in love with coding, thus this subject. Now, here I am in the beginner's stage of my web developing career, with the best ever professors ;]    ",
+        "Desc" : "Programming was one subject I was weakest at my high school. At some point I started loving, now there is no coming back.",
         "Image" : "coding.jpg",
         "tagline" :"In love with.."
     }
